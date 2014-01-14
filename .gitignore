@@ -1,0 +1,9 @@
+*.log
+*.pot
+*.pyc
+.project
+.pydevproject
+.gitignore~
+.idea
+Thumbs.db
+.settings
