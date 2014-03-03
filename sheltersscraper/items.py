@@ -7,7 +7,7 @@ from scrapy.item import Item, Field
 
 
 class ShelterItem(Item):
-    vendor_id = Field()
+    id = Field()
     title = Field()
     address = Field()
     neighborhood = Field()

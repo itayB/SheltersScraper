@@ -18,7 +18,8 @@ class DmozSpider(BaseSpider):
        for row in rows:
            cols = row.xpath('td/text()').extract()
            item = ShelterItem()
-           item['vendor_id'] = cols[0]
+           item['title'] = "מקלט מס ".decode('utf-8') + cols[0]
+           item['id'] = cols[0]
            item['address'] = cols[1]
            item['neighborhood'] = cols[2]
            item['city'] = "ראשון לציון"
